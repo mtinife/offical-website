@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Oswald:300,400,500");
+body {
+  background-color: #111111;
+  color: #FFFFFF; }
+
+.spacer {
+  padding: 80px; }
+
+.spacer-min {
+  padding: 40px; }
+
+.spacer-min-min {
+  padding: 20px; }
+
+.navbar {
+  background-color: #111111; }
+
+.jumbo-bg {
+  background-color: #111111; }
+
+.welcome {
+  padding: 230px 0 250px 0;
+  text-align: left;
+  text-shadow: 4px 4px 6px #000; }
+  .welcome .welcome-text {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500; }
+  .welcome .h5 {
+    color: #DF2935;
+    letter-spacing: .5em; }
+  .welcome .btn {
+    background-color: #DF2935;
+    color: #FFFFFF;
+    border: none; }
+    .welcome .btn a {
+      text-decoration: none;
+      color: #FFFFFF; }
+      .welcome .btn a:hover {
+        color: #FFFFFF; }
+    .welcome .btn:hover {
+      background-color: #232323; }
+
+.main {
+  position: absolute;
+  top: 950px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 400px; }
+  .main .layer-1 {
+    width: 100%;
+    height: 100%;
+    background: #DF2935;
+    transform: skewX(-30deg);
+    box-shadow: 0 0 0 15px #111111;
+    z-index: 1;
+    transition: .5s; }
+  .main .layer-2 {
+    position: relative;
+    top: -400px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #232323;
+    z-index: -1;
+    transition: 1s; }
+  .main .card {
+    background: none; }
+  .main #message {
+    top: -740px;
+    width: 50rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none; }
+    .main #message p {
+      font-family: "Lato", sans-serif;
+      font-size: 1.4em; }
+  .main .card-body {
+    background-color: #111111;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    text-align: center; }
+
+.main:hover .layer-2 {
+  transform: scaleX(1.5) scaleY(0.8); }
+
+.about {
+  position: absolute;
+  top: 1250px;
+  width: 100%;
+  height: 100%; }
+  .about img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .about .card {
+    height: 5em;
+    background: #111111;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2); }
+  .about .show-me {
+    color: #DF2935;
+    display: none; }
+  .about .card:hover .show-me {
+    display: block; }
+  .about .card:hover .ok {
+    display: none; }
+  .about .card:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7); }
+  .about h1 {
+    font-size: 5em; }
+  .about h4 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.8em;
+    color: #666;
+    border-bottom: 1px solid #DF2935; }
+  .about h5 {
+    margin-top: 12px; }
+  .about p {
+    margin-top: 12px; }
+  .about .title {
+    color: #DF2935; }
+  .about h1 {
+    text-shadow: 4px 4px 6px #000;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400; }
+
+.skills {
+  position: relative;
+  top: 1200px;
+  width: 100%;
+  height: 100%; }
+  .skills .card {
+    background: #111111;
+    border: none; }
+  .skills h1 {
+    text-shadow: 4px 4px 6px #000;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 5em; }
+  .skills h5 {
+    color: #DF2935;
+    padding: 40px 0 20px 0;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    border-bottom: 1px solid #DF2935; }
+  .skills .skill-bottom {
+    margin-bottom: 40px; }
+  .skills .bread-butter {
+    background-color: #111111;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border: none; }
+  .skills #note {
+    width: 50rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none; }
+    .skills #note h1 {
+      color: #DF2935;
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 2em;
+      text-align: center;
+      padding: .5em; }
+    .skills #note p {
+      font-family: "Lato", sans-serif;
+      font-size: 1.4em; }
+  .skills p {
+    text-align: center; }
+
+.projects {
+  position: relative;
+  top: 1100px;
+  width: 100%;
+  height: 100%;
+  background-color: #D6D6D6;
+  padding-bottom: 600px; }
+  .projects h1 {
+    color: #DF2935;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 5em; }
+  .projects h5 {
+    padding: 2em;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 1.7em; }
+  .projects p {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+    color: #232323; }
+  .projects .card-title {
+    font-weight: 500;
+    color: #DF2935; }
+  .projects .card-subtitle {
+    color: #666; }
+  .projects img {
+    width: 100%;
+    height: 100%; }
+  .projects .card {
+    background-color: #D6D6D6;
+    border: none; }
+  .projects span {
+    color: #DF2935; }
+
+.call-to-action {
+  position: relative;
+  top: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: #D6D6D6; }
+  .call-to-action .contact {
+    background-color: #D6D6D6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    padding: 2em; }
+    .call-to-action .contact .btn {
+      background-color: #DF2935;
+      display: block;
+      margin: 0 auto;
+      margin-top: 40px;
+      color: #FFFFFF; }
+      .call-to-action .contact .btn a {
+        text-decoration: none;
+        color: #FFFFFF; }
+        .call-to-action .contact .btn a:hover {
+          color: #FFFFFF; }
+      .call-to-action .contact .btn:hover {
+        background-color: #232323; }
+  .call-to-action .card-body {
+    background-color: #D6D6D6; }
+  .call-to-action h1 {
+    color: #DF2935;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+    padding: .5em; }
+  .call-to-action p {
+    color: #666;
+    font-family: "Lato", sans-serif;
+    font-size: 1.4em; }
+
+.footer {
+  position: relative;
+  top: 700px;
+  bottom: 0; }
+  .footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .footer i {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.7em;
+    padding: 15px; }
+    .footer i:hover {
+      color: #DF2935; }
+  .footer .icons-by {
+    font-size: .8em;
+    text-align: center;
+    color: #666; }
+  .footer .copy {
+    text-align: center;
+    color: #666;
+    font-size: .9em; }

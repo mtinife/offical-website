@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald:300,400,500');
+
+$bg-color: #111111;
+$font-color: #FFFFFF;
+$bg-accent: #232323;
+$bg-secondo: #D6D6D6;
+$primary-color: #DF2935;
+$font-prime: 'Oswald', sans-serif;
+$font-secondo: 'Lato', sans-serif;
+
+
+
+body {
+  background-color: $bg-color;
+  color: $font-color;
+}
+
+.spacer {
+  padding: 80px;
+}
+
+.spacer-min {
+  padding: 40px;
+}
+
+.spacer-min-min {
+  padding: 20px;
+}
+
+.navbar {
+  background-color: $bg-color;
+}
+
+.jumbo-bg {
+  background-color: $bg-color;
+}
+
+.welcome {
+  padding: 230px 0 250px 0;
+  text-align: left;
+  text-shadow: 4px 4px 6px #000;
+
+  .welcome-text {
+    font-family: $font-prime;
+    font-weight: 500;
+  }
+
+  .h5 {
+    color: $primary-color;
+    letter-spacing: .5em;
+  }
+
+  .btn {
+    background-color: $primary-color;
+    color: $font-color;
+    border: none;
+
+    a {
+      text-decoration: none;
+      color: $font-color;
+      &:hover {
+        color: $font-color;
+      }
+    }
+    &:hover {
+      background-color: $bg-accent;
+    }
+  }
+}
+
+.main {
+  position: absolute;
+  top: 950px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 400px;
+
+  .layer-1 {
+    width: 100%;
+    height: 100%;
+    background: $primary-color;
+    transform: skewX(-30deg);
+    box-shadow: 0 0 0 15px $bg-color;
+    z-index: 1;
+    transition: .5s;
+  }
+
+  .layer-2 {
+    position: relative;
+    top: -400px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: $bg-accent;
+    z-index: -1;
+    transition: 1s;
+  }
+
+  .card {
+    background: none;
+  }
+
+  #message {
+    top: -740px;
+    width: 50rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+
+    p {
+      font-family: $font-secondo;
+      font-size: 1.4em;
+    }
+  }
+
+  .card-body {
+    background-color: $bg-color;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    text-align: center;
+  }
+}
+.main:hover .layer-2 {
+  transform: scaleX(1.5) scaleY(.8);
+}
+
+
+
+// .content {
+//   // background: $bg-color;
+//   padding: 50px;
+//   text-align: center;
+//   font-size: 1.5em;
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+//   // box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+//
+//   p {
+//     padding-top: 40px;
+//   }
+// }
+
+.about {
+  position: absolute;
+  top: 1250px;
+  width: 100%;
+  height: 100%;
+
+  img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card {
+    height: 5em;
+    background: $bg-color;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .show-me {
+    color: $primary-color;
+    display: none;
+  }
+
+  .card:hover .show-me {
+    display: block;
+  }
+
+  .card:hover .ok {
+    display: none;
+  }
+
+  .card:hover {
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+
+  h4 {
+    font-family: $font-prime;
+    font-weight: 300;
+    font-size: 1.8em;
+    color: #666;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  h5 {
+    margin-top: 12px;
+  }
+
+  p {
+    margin-top: 12px;
+  }
+
+  .title {
+    color: $primary-color;
+  }
+
+  h1 {
+    text-shadow: 4px 4px 6px #000;
+    font-family: $font-prime;
+    font-weight: 400;
+  }
+}
+
+.skills {
+  position: relative;
+  top: 1200px;
+  width: 100%;
+  height: 100%;
+
+  .card {
+    background: $bg-color;
+    border: none;
+  }
+
+  h1 {
+    text-shadow: 4px 4px 6px #000;
+    font-family: $font-prime;
+    font-weight: 400;
+    font-size: 5em;
+  }
+
+  h5 {
+    color: $primary-color;
+    padding: 40px 0 20px 0;
+    font-family: $font-prime;
+    font-weight: 300;
+    font-size: 1.5em;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  .skill-bottom {
+    margin-bottom: 40px;
+  }
+
+  .bread-butter {
+    background-color: $bg-color;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border: none;
+  }
+
+  #note {
+    width: 50rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+
+    h1 {
+      color: $primary-color;
+      font-family: $font-prime;
+      font-weight: 400;
+      font-size: 2em;
+      text-align: center;
+      padding: .5em;
+    }
+
+    p {
+      font-family: $font-secondo;
+      font-size: 1.4em;
+    }
+  }
+
+
+
+  p {
+    text-align: center;
+  }
+}
+
+.projects {
+  position: relative;
+  top: 1100px;
+  width: 100%;
+  height: 100%;
+  background-color: $bg-secondo;
+  padding-bottom: 600px;
+
+  h1 {
+    color: $primary-color;
+    font-family: $font-prime;
+    font-weight: 400;
+    font-size: 5em;
+  }
+
+  h5 {
+    padding: 2em;
+    font-family: $font-prime;
+    font-weight: 300;
+    font-size: 1.7em;
+  }
+
+  p {
+    font-family: $font-secondo;
+    font-size: 1.2em;
+    color: $bg-accent
+  }
+
+  .card-title {
+    font-weight: 500;
+    color: $primary-color;
+  }
+
+  .card-subtitle {
+    color: #666;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .card {
+    background-color: $bg-secondo;
+    border: none;
+  }
+
+  span {
+    color: $primary-color;
+  }
+}
+
+.call-to-action {
+  position: relative;
+  top: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: $bg-secondo;
+
+  .contact {
+    background-color: $bg-secondo;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    padding: 2em;
+
+    .btn {
+      background-color: $primary-color;
+      display: block;
+      margin: 0 auto;
+      margin-top: 40px;
+      color: $font-color;
+
+      a {
+        text-decoration: none;
+        color: $font-color;
+        &:hover {
+          color: $font-color;
+        }
+      }
+      &:hover {
+        background-color: $bg-accent;
+      }
+    }
+  }
+
+  .card-body {
+    background-color: $bg-secondo;
+
+  }
+
+  h1 {
+    color: $primary-color;
+    font-family: $font-prime;
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+    padding: .5em;
+  }
+
+  p {
+    color: #666;
+    font-family: $font-secondo;
+    font-size: 1.4em;
+  }
+}
+
+.footer {
+  position: relative;
+  top: 700px;
+  bottom: 0;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  i {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.7em;
+    padding: 15px;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .icons-by {
+    font-size: .8em;
+    text-align: center;
+    color: #666;
+  }
+
+  .copy {
+    text-align: center;
+    color: #666;
+    font-size: .9em;
+  }
+}
